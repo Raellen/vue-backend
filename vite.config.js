@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import vuetify from 'vite-plugin-vuetify'
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/vue-backend/', 
   plugins: [
     vue(),
     vueDevTools(),

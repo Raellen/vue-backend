@@ -35,5 +35,17 @@
       "role": "Admin",
       "status": "Active"
     }
+  ],
+  "sales": [
+    { "id": "sale-001", "productName": "Vue 3 T-Shirt", "amount": 25, "date": "2025-08-04" },
+    { "id": "sale-002", "productName": "Vuetify Mug", "amount": 15, "date": "2025-08-04" },
+    { "id": "sale-003", "productName": "Pinia Sticker Pack", "amount": 10, "date": "2025-08-05" },
+    { "id": "sale-004", "productName": "Vue 3 T-Shirt", "amount": 25, "date": "2025-08-05" },
+    { "id": "sale-005", "productName": "Vite Cap", "amount": 20, "date": "2025-08-06" },
+    { "id": "sale-006", "productName": "Vuetify Mug", "amount": 30, "date": "2025-08-07" },
+    { "id": "sale-007", "productName": "Vue 3 T-Shirt", "amount": 50, "date": "2025-08-08" },
+    { "id": "sale-008", "productName": "Pinia Sticker Pack", "amount": 20, "date": "2025-08-08" },
+    { "id": "sale-009", "productName": "Vite Cap", "amount": 40, "date": "2025-08-09" },
+    { "id": "sale-010", "productName": "Vuetify Mug", "amount": 15, "date": "2025-08-10" }
   ]
 }

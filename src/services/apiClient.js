@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:3000/',
-    // baseURL: 'https://my-json-server.typicode.com/raellen/vue-backend', 
+    // baseURL: 'http://localhost:3000/',
+    baseURL: 'https://my-json-server.typicode.com/raellen/vue-backend', 
     headers: { 'Content-Type': 'application/json' }
 });
 

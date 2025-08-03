@@ -22,12 +22,19 @@ const router = createRouter({
       component: () => import('../views/UserManagementView.vue'),
       meta: { title: '使用者管理', requiresAuth: true }
     },
+    {
+      path: '/sales',
+      name: 'Sales',
+      component: () => import('../views/SalesView.vue'),
+      meta: { title: '銷售報告', requiresAuth: true }
+    },
+    // 將所有不匹配的路由重定向到首頁
     { path: '/:pathMatch(.*)*', redirect: '/' }
   ]
 })
 
 router.beforeEach((to, from, next) => {
-  const token = localStorage.getItem('token'); // 檢查 token
+  const token = localStorage.getItem('token'); // 簡單檢查 token
   
   if (to.meta.requiresAuth && !token) {
     next({ name: 'Login' });

@@ -35,6 +35,7 @@ watch(route, (to) => {
       <v-divider></v-divider>
       <v-list density="compact" nav>
         <v-list-item prepend-icon="mdi-view-dashboard" title="儀表板" value="dashboard" to="/"></v-list-item>
+        <v-list-item prepend-icon="mdi-chart-line" title="銷售報告" value="sales" to="/sales"></v-list-item>
         <v-list-item prepend-icon="mdi-account-group" title="使用者管理" value="users" to="/users"></v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -92,5 +93,13 @@ watch(route, (to) => {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+}
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.clickable-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 </style>

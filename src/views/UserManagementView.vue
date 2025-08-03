@@ -124,7 +124,7 @@ async function deleteItemConfirm() {
         <v-toolbar-title>使用者列表</v-toolbar-title>
         <v-divider class="mx-4" inset vertical></v-divider>
         <v-spacer></v-spacer>
-        <v-text-field
+        <!-- <v-text-field
           v-model="search"
           append-inner-icon="mdi-magnify"
           label="搜尋使用者 (姓名, email)"
@@ -133,7 +133,7 @@ async function deleteItemConfirm() {
           density="compact"
           class="mr-4"
           style="max-width: 300px;"
-        ></v-text-field>
+        ></v-text-field> -->
         <v-btn color="primary" @click="openDialog()">新增使用者</v-btn>
       </v-toolbar>
 
